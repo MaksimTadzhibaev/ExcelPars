@@ -10,7 +10,6 @@ public class Main {
         List<Obj> bool = new ArrayList<>();
         bool.add(new Obj(false, 1));
         bool.add(new Obj(true, 1));
-        bool.add(new Obj(false, 1));
         bool.add(new Obj(true, 1));
         bool.add(new Obj(false, 1));
         bool.add(new Obj(true, 1));
