@@ -1,0 +1,57 @@
+#получение списка всех студентов
+
+GET http://localhost:8080/app/student/all
+
+###
+#получения одного студента по id
+
+GET http://localhost:8080/app/student/1
+
+###
+#добавление нового студента
+
+POST http://localhost:8080/app/student/new
+Content-Type: application/json
+
+{
+  "name": "Alena",
+  "age": 31
+}
+
+###
+#редактирование студента
+
+PUT http://localhost:8080/app/student/1/edit
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Max",
+  "age": 33
+}
+
+###
+#удаление студента
+
+DELETE http://localhost:8080/app/student/3/delete
+
+
+###
+#парсим всех студентов в excel
+
+POST http://localhost:8080/app/student/parseAll
+
+###
+#парсим одного студента в excel
+
+POST http://localhost:8080/app/student/1/parseId
+
+###
+#разукрашиваем excel
+
+POST http://localhost:8080/app/student/pointCell
+
+###
+#получаем студентов из БД
+
+POST http://localhost:8080/app/student/getStudents
