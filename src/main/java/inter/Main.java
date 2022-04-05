@@ -11,8 +11,6 @@ public class Main {
         bool.add(new Obj(false, 1));
         bool.add(new Obj(true, 1));
         bool.add(new Obj(true, 1));
-        bool.add(new Obj(false, 1));
-        bool.add(new Obj(true, 1));
         List <String> inta = (bool.stream().map(x->{String an = (x.b) ? "да" : "нет";
             return an;
         }).collect(Collectors.toList()));
