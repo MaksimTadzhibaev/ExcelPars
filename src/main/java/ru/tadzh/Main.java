@@ -8,7 +8,6 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("П3+П4", "А5+А6", "П1", "А3");
-//        System.out.println(getFormType("32"));
         System.out.println(getFullNameIndicator(new ArrayList<String>(Collections.singleton("А5+А6"))));
     }
 
